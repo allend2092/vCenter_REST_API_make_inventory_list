@@ -1,0 +1,1 @@
+# vCenter_REST_API_make_inventory_list
