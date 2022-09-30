@@ -6,6 +6,7 @@
 import requests
 import time
 import datetime
+import os
 
 username = input('Type your username: ')
 password = input('Type your password: ')
@@ -123,7 +124,10 @@ for record in datacenter_response:
     record['datacenter'] = sorted_list_by_moid[i]
     i = i + 1
 
-# Opening a file to store the info retrived from vCenter
+# Opening a file to store the info retrieved from vCenter
+resp = os.popen('mkdir DC-ESXi-VM-Info')
+print(resp)
+time.sleep(1)
 f = open("./DC-ESXi-VM-Info/DC-ESXi-VM-Status.txt", "w")
 
 x = datetime.datetime.now()
