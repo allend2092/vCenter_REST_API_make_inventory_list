@@ -10,7 +10,7 @@ import os
 import getpass
 
 username = input('Type your username: ')
-password = getpass.getpass()
+password = getpass.getpass("Type your password: ")
 
 # Sometimes DNS does not provide consistent resolution. Sometimes its best to use ip address, or create a host file.
 vcenter_url = 'https://172.17.0.100'
